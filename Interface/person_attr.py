@@ -34,21 +34,13 @@ def personattr_detect(img):
             x2 = x1 + location['width']
             y2 = y1 + location['height']
             cv.rectangle(img,(x1,y1),(x2,y2),(0,0,255),2)
-            print('rectangle')
             gender = item['attributes']['gender']
-            print('gender')
             age = item['attributes']['age']
-            print('age')
             facemask = item['attributes']['face_mask']
-            print('facemask')
             smoke = item['attributes']['smoke']
-            print('smoke')
             bag = item['attributes']['bag']
-            print('bag')
             vehicle = item['attributes']['vehicle']
-            print('vehicle')
             cellphone = item['attributes']['cellphone']
-            print("all")
             with open('data/RecordOut.txt', 'a') as file:
                 file.write(f"Person {No}: Gender {gender},Age {age}, Facemask {facemask}, Smoke {smoke},Bag {bag}, Vehicle {vehicle}, Cellphone {cellphone} \n")
             No += 1
@@ -67,8 +59,4 @@ def personattr_detect(img):
         #     print('img')
             # cv.imshow('Rectangle', img)
     return img, num
-    # return num
-    print('response')
-    # # 等待按键，然后关闭窗口
-    # cv.waitKey(0)
-    # cv.destroyAllWindows()
+
