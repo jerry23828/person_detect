@@ -1,7 +1,7 @@
 <RCC>
   <qresource prefix="/">
+    <file>Mainbackground.jpg</file>
     <file>Loginbackground.jpg</file>
     <file>Videobackground.jpg</file>
-    <file>Detectbackground.jpg</file>
   </qresource>
 </RCC>
